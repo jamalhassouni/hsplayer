@@ -1,0 +1,190 @@
+body{
+    margin: 0px;
+    padding:0px ;
+    background-color: #353b48;
+}
+#frame{
+    height: 400px;
+    width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    z-index: 9;
+}
+#player{
+    width: 602px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    z-index: 9;
+    overflow: hidden;
+}
+#videoPanel{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+}
+#controls{
+    height: 50px;
+    width: 97%;
+    padding: 10px;
+    position: absolute;
+   /* top: 107%;*/
+   top:92%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    -webkit-transition: all .5s ;
+    transition: all .5s ;
+
+}
+#controls table {
+        position: relative;
+        top: 11px;
+
+}
+#player:hover #controls {
+    top:92%;
+}
+#seek-bar{
+    width: 100%;
+    height: 10px;
+    background-color:gray ;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+#seek-bar {
+    cursor: move;
+}
+#fill{
+    height:10px;
+    width: 10px;
+    background-color: #91DC5a;
+}
+
+#currentTime{
+    font-family: monospace;
+    font-size: 14px;
+    color: #91DC5a;
+}
+#toggle,#speaker{
+    cursor: pointer;
+} 
+img#speaker,img#toggle,.player-button img ,.fullscreen img  {
+    width: 22px;
+}
+.video_preloader{
+    background: url(../images/loader.svg);
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    display: block;
+    z-index: 9;
+    position: absolute;
+    top: 109px;
+    left: 43%;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+.skip_a {
+    width: 22px;
+    height: 22px;
+    background-image: url("../images/rewind.svg");
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 6px;
+    margin-right: 6px;
+    cursor: pointer;
+}
+.skip_b {
+    width: 22px;
+    height: 22px;
+    background-image: url("../images/fast-forward.svg");
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 6px;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+input[type=range]{
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    -ms-appearance: none !important;
+    -o-appearance: none !important;
+    background-color: #666;
+    height: 4px;
+    border-radius: 4px;
+    outline: none;
+}
+input[type=range]::-webkit-slider-thumb{
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    -ms-appearance: none !important;
+    -o-appearance: none !important;
+    background-color: #91DC5a;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+input[type=range]::-moz-range-thumb{
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    -ms-appearance: none !important;
+    -o-appearance: none !important;
+    background-color: #91DC5a;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+input[type=range]::-o-slider-thumb{
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    -ms-appearance: none !important;
+    -o-appearance: none !important;
+    background-color: #91DC5a;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+input[type=range]::-ms-slider-thumb{
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    -ms-appearance: none !important;
+    -o-appearance: none !important;
+    background-color: #91DC5a;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+button.player-button {
+    width: 46px;
+    background: none;
+    border: none;
+    color: #91dc5a;
+    font-family: ubuntu;
+    font-size: 13px;
+    cursor: pointer;
+}
+.fullscreen{
+    width: 22px;
+    cursor: pointer;
+}
